@@ -1,7 +1,7 @@
 
 /*General*/
 body {
-    font-family: 'Arial, sans-serif';
+    font-family: 'Roboto', sans-serif';
     background-color: #f7f3f0; 
     color: #4d4d4d;
     margin: 0;
@@ -26,34 +26,44 @@ h2 {
 /* Navbar */
 nav#navbar {
     background-color: #f5e6f7; 
-    padding: 1rem;
+    padding: 1.5rem;
     position: sticky;
     top: 0;
     z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 nav#navbar ul {
     list-style-type: none;
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     padding: 0;
+    width: 100%;
+    text-align: center;
 }
 
 nav#navbar ul li {
-    margin: 0 1rem;
+    margin: 0 1.5rem;
+    display: inline;
 }
 
 nav#navbar ul li a {
     text-decoration: none;
     color: #99627a; 
     font-weight: bold;
-    transition: color 0.3s;
+    font-size: 1.5rem;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+nav#navbar ul li a:hover {
+    color: #c08497; 
+    transform: scale(1.1);
 }
 
 nav#navbar ul li a:hover {
     color: #c08497; 
 }
-
 /* Section Styles */
 section {
     padding: 5rem;
